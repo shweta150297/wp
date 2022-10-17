@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>  
+  
+    <body>  
+      <script>  
+      var greating;  
+      var date = new Date();
+      var today=date.getDate();
+      var day = date.getDay();
+      var daylist=[" Sunday "," Monday "," Tuesday "," Wednesday "," Thrusday "," Friday "," Saturday "]
+      var month=date.getMonth();
+      var monthlist=[" January ", " February ", " March ", " April "," May "," June "," July ", " August "," September "," October "," November "," December "]
+      var year=date.getFullYear();
+
+      var hour=date.getHours();
+      if (hour < 12) {  
+        greating= "Welcome, and Good Morning to You.";  
+      } else if (hour < 17) {  
+        greating = "Welcome, and Good Afternoon to You.";  
+      } else {  
+        greating = "Welcome, and Good Evening to You.";  
+      }  
+      document.write("<h2>" + "<font color='maroon'>" +"Today is "+ daylist[day] +","+ today+monthlist[month] + year +","+greating + "</font>" );    
+      </script>  
+    </body>  
+    
+  </html>  
